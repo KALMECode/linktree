@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    background: linear-gradient(-45deg, #590094, #9303e7, #e5bdff, #bb54ff);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.circle {
+    animation: 5s circle;
+  }
+  
+  @keyframes circle {
+    from {
+      -webkit-clip-path: circle(0%);
+      clip-path: circle(0%);
+    }
+    to {
+      -webkit-clip-path: circle(350px);
+      clip-path: circle(350px);
+    }
+  }
+.redes_sociais a {
+    text-decoration: none;
+}
+.more {
+    animation: 10s circle;
+}
+.info-box {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box h1, .main-bx h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.315);
+    margin-bottom: 10px;
+}
+.info-box h5 {
+    margin-top: -5px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    color: #fff;
+}
+.main-bx h1 {
+    text-shadow: none;
+    font-size: 15px;
+}
+
+.info-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.main-bx {
+    display: flex;
+    width: 450px;
+    height: 370px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.redes_sociais {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.redes_sociais button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #bb54ff;
+    text-shadow: 2px 2px 2px #9303e765;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+.redes_sociais button:hover {
+    opacity: 0.2;
+}
+
+.iconelinkedin {
+    display: flex;
+    font-size: 30px;
+    padding: 0 20px;
+    margin-left: -40px;
+    color: #0073b2; /* fallback color */
+    text-shadow: none;
+}
+.iconeinstagram {
+    display: flex;
+    font-size: 30px;
+    padding: 0 20px;
+    margin-left: -30px;
+    color: #E1306C;
+    text-shadow: none;
+}
+.iconegit {
+    display: flex;
+    font-size: 30px;
+    padding: 0 20px;
+    margin-left: -52px;
+    color: #4078c0;   
+    text-shadow: none; 
+}
+.text_title {
+    margin-top: -45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.top {
+    margin-top: -10px;
+}
+.recomendado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 280px;
+    height: 160px;
+    background-color: transparent;
+    z-index: 99;
+    border-radius: 10px;
+    margin-top: -40px;
+}
+.videoest {
+    margin-top: -40px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 457px) {
+    .main-bx {
+        width: 100%;
+    }
+    .redes_sociais button {
+        width: 100%;
+    }
+    .redes_sociais a {
+        width: 100%;
+    }
+}
